@@ -27,7 +27,7 @@ export default {
                     },
                 }),
             ],
-            getExportNamed: false, // Default false, when set to true it will also named export alongside default export your class names
+            getExportNamed: true, // Default false, when set to true it will also named export alongside default export your class names
             getExport(id) {
                 return cssExportMap[id]
             },

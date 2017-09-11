@@ -1,10 +1,11 @@
+@value aColor: magenta;
+
 .testCss {
-    background: red;
-    animation: 1s linear;
-    animation-name: fade-in;
+    background: aColor;
+    animation: 1s linear fadeIn;
 }
 
-@keyframes fade-in {
+@keyframes fadeIn {
     from {
         opacity: 0;
     }

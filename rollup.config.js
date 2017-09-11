@@ -23,4 +23,8 @@ export default {
     watch: {
         include: 'src/**',
     },
+    onwarn: message => {
+        if (message.code === 'MISSING_EXPORT') return
+        console.error(message)
+    },
 }

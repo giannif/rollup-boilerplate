@@ -1,3 +1,14 @@
 .testCss {
     background: red;
+    animation: 1s linear;
+    animation-name: fade-in;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

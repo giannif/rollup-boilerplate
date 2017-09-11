@@ -5,9 +5,11 @@ import babel from 'rollup-plugin-babel'
 import postcss from 'rollup-plugin-postcss'
 import postcssModules from 'postcss-modules'
 
-// `npm run build` -> `production` is true
+// `npm run --production build` -> `production` is true
 // `npm run dev` -> `production` is false
-const production = !process.env.ROLLUP_WATCH
+
+const production = process.env.NODE_ENV === 'production'
+
 const cssExportMap = {}
 export default {
     entry: 'src/main.js',
